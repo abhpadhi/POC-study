@@ -1,0 +1,46 @@
+GIT Cheat Sheet 
+---------------------------------------------------------------------
+git status 		-- To check the modified files staged for next commit 
+git clone URL 	-- To clone a repo using its URL from git UI
+git branch 		-- To check the current branch
+git branch branch-name  -- To create a new branch with in the master branch of a repo 
+git checkout branch-name - Switch to the provided branch 
+git init    	-- initiates an empty 
+
+git config --global user.name  "Abhinab Padhi"  -- set name for the global config
+git config --global user.name  "xyz@gmail.com"  -- set email for the global config
+git config --global core.excludesfile [file]
+git config --local -- this allows us to have config set locally for different paths with different creds 
+
+git add  -i  -- interactively add files 		 Git add adds modified/supplied files in to a staging area before it can be pushed to repo
+	add  -u  -- update all the tracked files 
+	add  -A  -- update all the files  	
+	add  -v  -- enables verbosity 
+	
+git reset filename -- Unstage a file while retaining the local file content 
+git reset --hard commit -- clear staging area and rewrite working tree from provided commit 
+
+git diff 			-- shows difference of what is changed but not staged
+git diff --stage 	-- shows difference of what is staged but not committed
+git diff branchB..branchA -- shows difference that is on branchA but not on branchB
+
+git log 	-- gives the commit history with commit IDs of the current branch
+git commit -m "[Comment for the commit]" -- This will commit the staged changes 
+git merge IPL  -- this will merge the "IPL" branch's content with the current branch. 
+git rebase IPL master -- this will point the current state of IPL branch(all the commits) to the latest state of master 
+
+git remote add [alias] URL  -- add remote git URL as an alias 
+git fetch alias 	-- fetch down all the branches from the remote alias 
+git push alias branch  -- pushing committed changes to the alias on the given branch 
+git pull 	--   pull the changes from 
+git rm filename 	-- this will removes the provided file from project and stages the file removal for commit 
+git mv old-file-path new-file-path   -- rename the path to new from old and stage the change 
+
+
+
+
+
+
+
+
+
