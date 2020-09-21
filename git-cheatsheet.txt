@@ -36,6 +36,15 @@ git pull 	--   pull the changes from
 git rm filename 	-- this will removes the provided file from project and stages the file removal for commit 
 git mv old-file-path new-file-path   -- rename the path to new from old and stage the change 
 
+git stash save 	--  save modified and staged changes so that you can switch branch to change code of another branch 
+git stash list 	-- 	lists all the stashes that are created 
+git stash pop stash-id	--  get back to work on the stash-id where you had left and remove it from stash list 
+git stash apply stash-id   -- to apply stash-id to the working tree in the current branch 
+git stash drop stash-id	   -- to remove stash-id from stash list
+
+
+
+
 
 
 
